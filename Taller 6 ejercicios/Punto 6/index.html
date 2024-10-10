@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <label for="operation">Selecciona una operación:</label>
+        <select id="operation">
+            <option value="sumar">Suma</option>
+            <option value="restar">Resta</option>
+            <option value="multiplicar">Multiplicación</option>
+            <option value="dividir">División</option>
+            <option value="potencia">Potencia</option>
+            <option value="raizCuadrada">Raíz Cuadrada</option>
+            <option value="modulo">Módulo</option>
+            <option value="factorial">Factorial</option>
+            <option value="promedio">Promedio</option>
+            <option value="porcentaje">Porcentaje</option>
+        </select>
+
+        <div id="inputs-container">
+            <input type="number" id="param1" placeholder="Primer número">
+            <input type="number" id="param2" placeholder="Segundo número">
+        </div>
+
+        <button onclick="realizarOperacion()">Calcular</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
